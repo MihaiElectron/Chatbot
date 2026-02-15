@@ -2,7 +2,7 @@ const Chatbot = {
   defaultResponses: {
     'hello hi bonjour': `Bonjour ! Comment puis-je vous aider ?`,
     'comment ca va': `Je vais très bien ! Comment puis-je vous aider ?`,
-    'flip a coin': function () {
+    'lancer une piece': function () {
       const randomNumber = Math.random();
       if (randomNumber < 0.5) {
         return 'Bien sûr ! Vous avez face';
@@ -10,11 +10,11 @@ const Chatbot = {
         return 'Bien sûr ! Vous avez pile';
       }
     },
-    'roll a dice': function() {
+    'lancer un dé': function() {
       const diceResult = Math.floor(Math.random() * 6) + 1;
       return `Bien sûr ! Vous avez obtenu ${diceResult}`;
     },
-    'quel jour on est': function () {
+    'quel jour on est la date d aujourd hui': function () {
       const now = new Date();
       const months = [
         'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin',

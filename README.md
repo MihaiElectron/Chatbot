@@ -1,18 +1,33 @@
-# React + Vite
+# Chatbot React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet est un **chatbot simple** développé avec **React** et **Vite**.  
+Il permet à l’utilisateur d’envoyer des messages et de recevoir des réponses automatiques d’un bot intégré.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Fonctionnalités
 
-## React Compiler
+- Envoyer un message via un input.
+- Recevoir une réponse immédiate du chatbot.
+- Support pour des commandes simples :  
+  - Lancer une pièce (`flip a coin`)
+  - Lancer un dé (`roll a dice`)
+  - Obtenir la date du jour (`what is the date today`)
+- Gestion des messages vides et réponses inconnues.
+- Envoi du message avec **clic sur le bouton** ou **touche Enter**.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## Installation
 
-## Expanding the ESLint configuration
+1. Cloner le projet :
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+git clone https://github.com/MihaiElectron/Chatbot.git
+
+2. Installer les dépendances :
+
+npm install
+
+3. Lancer le serveur de développement :
+
+npm run dev
